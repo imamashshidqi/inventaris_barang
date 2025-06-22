@@ -23,7 +23,6 @@
                 <table class="w-full text-left">
                     <thead class="bg-gray-50 border-b-2 border-gray-200">
                         <tr>
-                            <th class="p-4 text-sm font-semibold text-gray-600">ID</th>
                             <th class="p-4 text-sm font-semibold text-gray-600">Nama Barang</th>
                             <th class="p-4 text-sm font-semibold text-gray-600">Kategori</th>
                             <th class="p-4 text-sm font-semibold text-gray-600">Stok</th>
@@ -35,7 +34,6 @@
                         @forelse ($barangs as $item)
                             <tr class="hover:bg-gray-50 transition duration-200">
                                 {{-- PERBAIKAN: Kolom ID utama di Laravel adalah 'id' --}}
-                                <td class="p-4 text-gray-700">{{ $item->id }}</td>
                                 <td class="p-4 text-gray-900 font-medium">{{ $item->nama_barang }}</td>
                                 <td class="p-4 text-gray-700">{{ $item->kategori }}</td>
                                 <td class="p-4 text-gray-700">{{ $item->stok }}</td>

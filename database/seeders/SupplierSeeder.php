@@ -15,14 +15,17 @@ class SupplierSeeder extends Seeder
     {
         $suppliers = [
             [
+                'id' => 1,
                 'nama_supplier' => 'PT. Sinar Jaya Abadi',
                 'kontak' => '081234567890',
             ],
             [
+                'id' => 2,
                 'nama_supplier' => 'CV. Mitra Perkasa',
                 'kontak' => 'sales@mitraperkasa.com',
             ],
             [
+                'id' => 3,
                 'nama_supplier' => 'UD. Makmur Sentosa',
                 'kontak' => '021-555-1234',
             ],
