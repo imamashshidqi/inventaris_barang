@@ -11,9 +11,10 @@ class BarangController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $barangs = Barang::latest()->paginate(10);
+        $barangs = Barang::query()->latest()->filter($request->only(['search', 'supplier']))->paginate(10)->withQueryString();
+        $suppliers = Supplier::query();
 
         return view('barang.index', compact('barangs'));
     }
